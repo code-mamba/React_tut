@@ -9,6 +9,7 @@ import TodoList from './components/LiftingUpState/TodoList';
 import AddTodo from './components/LiftingUpState/AddTodo';
 import State from './components/useStatehook/useStateHook';
 import EffectsDemoNoDependency from './components/useEffect/useEffect';
+import Counter from './components/useReducer/useReducer';
 
 export const ApplicationContext = React.createContext()
 function App() {
@@ -36,6 +37,7 @@ const[todos,setTodos] = useState([])
      <br></br>
      <br></br>
      <EffectsDemoNoDependency></EffectsDemoNoDependency>
+     <Counter></Counter>
     </div>
     
   );

@@ -6,8 +6,8 @@ function EffectsDemoNoDependency(){
 	const titleRef = useRef()
 	const[darkMode,setDarkMode] = useState(false)
 	useEffect(()=>{
-		console.log("use effect")
-	})
+		console.log("Title name",title)
+	},[title])
 
 	const handleClick=()=>{
 		setTitle(titleRef.current.value)
